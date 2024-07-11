@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="font-['helvetica_now_display']">
+    <nav class="w-full flex justify-between px-5 py-3">
+      <h3 class="text-xl">Scatch</h3>
+      <% if (typeof loggedin !== 'undefined' && loggedin) { %>
+      <div class="flex gap-5 uppercase">
+        <a href="/shop">shop</a>
+        <a href="/cart">Cart</a>
+        <a href="">My Account</a>
+        <form id="logoutForm" action="/users/logout" method="post">
+          <button type="submit" class="text-red-600 cursor-pointer uppercase">
+            Logout
+          </button>
+        </form>
+      </div>
+      <%} %>
+    </nav>
+
+    <!-- sprouts 1 time week less oily ,toned double toned baker biscuit no oil food -->
+  </body>
+</html>
